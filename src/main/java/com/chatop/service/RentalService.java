@@ -2,8 +2,10 @@ package com.chatop.service;
 
 import java.util.List;
 
-import com.chatop.entities.Rentals;
+import org.springframework.stereotype.Service;
 
+import com.chatop.entities.Rentals;
+@Service
 public interface RentalService {
     
      Rentals addRentals(Rentals rentals);

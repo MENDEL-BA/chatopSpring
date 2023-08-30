@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 
 import com.chatop.entities.Message;
 import com.chatop.entities.User;
@@ -13,6 +13,7 @@ import com.chatop.repository.UserRepository;
 import com.chatop.service.MessageService;
 import com.chatop.service.UserDetailsService;
 
+@Service
 public class MessageServImpl implements MessageService{
 
     private final MessageRepository messageRepository;
